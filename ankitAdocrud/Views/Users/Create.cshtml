@@ -1,0 +1,45 @@
+﻿@{
+    ViewBag.Title = "Create";
+}
+<div class="row">
+    <div class="col-md-6 offset-3">
+        <div class="card">
+            <div class="card-header">
+                <h4>Create</h4>
+            </div>
+            <div class="card-body">
+                @using (Html.BeginForm("Create", "Users", FormMethod.Post))
+                {
+
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" class="form-control" name="Name" />
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="text" class="form-control" name="Email" />
+                    </div>
+                    <div class="form-group">
+                        <label>Mobile</label>
+                        <input type="text" class="form-control" name="Mobile" />
+                    </div>
+                    <div class="form-group">
+                        <label>Adress</label>
+                        <input type="text" class="form-control" name="Adress" />
+                    </div>
+                    <div class="form-group">
+                        <label>Gender</label>
+                        <input type="text" class="form-control" name="Gender" />
+                    </div>
+                    <div class="form-group">
+                        <label>IsActive</label>
+                        <input type="number" class="form-control" name="IsActive" />
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div> 
